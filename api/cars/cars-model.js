@@ -17,7 +17,6 @@ const create = (car) => {
 }
 
 const getByVin = (vin) => {
-  console.log('in getByVin', vin)
   return db('cars')
     .select('vin')
     .where('vin', vin)
